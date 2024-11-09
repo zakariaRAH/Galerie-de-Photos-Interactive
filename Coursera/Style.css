@@ -1,0 +1,59 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+figure {
+    background-color: white;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+figure:focus {
+    outline: 2px solid #3ae5ff;
+    background-color: #cff9ff;
+}
+
+footer {
+    text-align: center;
+}
